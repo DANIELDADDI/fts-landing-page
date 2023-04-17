@@ -1,0 +1,273 @@
+#hcg-slider-1 .hcg-slide-container {
+    width: auto;
+    height: auto;
+}
+
+.hcg-slider {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.hcg-slide-container {
+    max-width: 100%;
+    display: inline-block;
+    position: relative;
+}
+
+.hcg-slides {
+    display: none;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    border: solid 1px #a0a0a0;
+}
+
+.hcg-slides img {
+    max-width: 100%;
+    max-height: 100%;
+    display: inline-block;
+}
+
+.hcg-slide-text {
+    color: #ffffff;
+    font-size: 14px;
+    padding: 3px 5px;
+    position: absolute;
+    bottom: 0;
+    border-radius: 5px;
+    left: 50%;
+    text-align: center;
+    text-shadow: 0 0 2px #000;
+    background-color: rgba(255, 255, 255, 0.30);
+    display: inline-block;
+    transform: translate(-50%, -5px);
+}
+
+.hcg-slide-dot-control {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.hcg-slide-dot {
+    cursor: pointer;
+    height: 13px;
+    width: 13px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.hcg-slide-dot.dot-active {
+    background-color: #717171;
+}
+
+.hcg-slide-number {
+    color: #ffffff;
+    font-size: 12px;
+    padding: 4px 7px;
+    position: absolute;
+    border-radius: 5px;
+    top: 5px;
+    left: 5px;
+    background-color: rgba(255, 255, 255, 0.30);
+}
+
+/************CSS Animation***********/
+
+.animated {
+    animation-name: fadeIn;
+    animation-duration: 1s;
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fadeInDown {
+    animation-name: FadeIn;
+}
+
+
+
+/* select the service */
+.main{
+    max-width: 1200px;
+    margin: auto;
+    background-color: rgb(129, 4, 92);
+}
+.flex-container{
+    padding-bottom: 10px; 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    justify-content: space-around;
+
+}
+
+.flex-one{
+    
+
+}
+.flex-one ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  
+}
+.flex-one ul li{
+  padding: 5px 10px; 
+  margin-top: 5px;
+  border: 1px solid rgb(175, 3, 145);
+  border-radius: 5px;
+  width: 200px;
+  display: inline-block;
+  background-color: #72034d;
+  text-align: center;
+
+}
+.flex-one ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+.flex-one  button{
+    padding: 5px 10px;
+    margin: 5px;
+    font-size: 20px;
+    background-color: #72034d;
+    color: white;
+    border: 1px solid white;
+    border-radius: 8px;
+    
+}
+/* end of services css */
+/* start of details and explanation css*/
+.flex-cargo{
+    border: 1px solid rgb(80, 2, 69);
+    padding: 15px 10px;
+    display: flex;
+    margin: 15px 0;
+    box-shadow: 2px 2px 10px;
+}
+@media (max-width:550px){
+    .flex-cargo{
+        display: flex;
+        flex-direction: column;
+        height: 400px;
+    }
+    .flex-image{
+        align-self: center;
+    }
+    .flex-head-text h3{
+        text-align: center;
+    }
+    .flex-head-text p{
+        text-align: justify;
+    }
+}
+.flex-head-text h3{
+    text-align: center;
+    color: white;
+}
+.flex-head-text p{
+    text-align: justify;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: white;
+    
+}
+.flex-passport{
+    border: 1px solid rgb(80, 2, 69);
+    padding: 20px 10px;
+    display: flex;
+    box-shadow: 2px 2px 10px;
+}
+
+
+@media (max-width:550px) {
+    .flex-visa {
+        display: flex;
+        flex-direction: column;
+        height: 400px;
+    }
+}
+
+.flex-visa{
+    display: flex;
+    padding: 15px 10px;
+    border: 1px solid rgb(80, 2, 69);
+    margin: 15px 0;
+    box-shadow: 2px 2px 10px  ;
+  
+}
+@media (max-width:550px) {
+    .flex-passport {
+        display: flex;
+        flex-direction: column;
+        height: 400px;
+    }
+}
+.flex-links{
+    flex-basis:300px;
+}
+.flex-links ul{
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+.flex-links ul li{
+    display: block;
+    padding: 5px 10px;
+    border: 1px solid rgb(175, 3, 135);
+    margin: 5px;
+    background-color: #72034d;
+
+}
+.flex-links ul li a{
+    text-decoration: none;
+    color: white;
+   
+}
+@media (max-width:550px) {
+    .flex-links ul li {
+        display: inline-block;
+    }
+}
+/* footer */
+.flex-footer{
+    display: flex;
+    justify-content: center;
+    margin: 15px 0;
+    border: 1px solid rgb(80, 2, 69);
+}
+.flex-nav,.flex-social,.flex-service{
+    flex-basis: 200px;
+}
+.flex-nav ul,.flex-social ul,.flex-serivce ul{
+    list-style-type:circle; 
+}
+.flex-nav ul li a,
+.flex-social ul li a,
+.flex-serivce ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+   
+}
+.flex-nav ul li ,
+.flex-social ul li ,
+.flex-serivce ul li  {
+   padding: 5px;
+
+}
